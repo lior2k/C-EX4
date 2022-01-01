@@ -37,26 +37,26 @@ int main() {
             delete_node_cmd(head);
 
         } else if (x == 'S') {
-            if (flag == 0) {
+            // if (flag == 0) {
+            //     shortsPath_cmd(head);
+            //     flag = 1;
+            // } else {
+            //     flag = 1;
+            //     printf("\n");
                 shortsPath_cmd(head);
-                flag = 1;
-            } else {
-                flag = 1;
-                printf("\n");
-                shortsPath_cmd(head);
-            }
+            // }
             
 
         } else if (x == 'T') {
             
-            if (flag == 0) {
+            // if (flag == 0) {
+            //     TSP_cmd(head);
+            //     flag = 1;
+            // } else {
+            //     flag = 1;
+            //     printf("\n");
                 TSP_cmd(head);
-                flag = 1;
-            } else {
-                flag = 1;
-                printf("\n");
-                TSP_cmd(head);
-            }
+            // }
             
 
         } else if (x == 'P') {
