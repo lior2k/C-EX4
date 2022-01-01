@@ -146,9 +146,9 @@ void shortsPath_cmd(pnode *head) {
     scanf("%d%d", &src_index, &dest_index);
     int dist = dijkstra(head, src_index, dest_index);
     if (dist == Max_Value) {
-        printf("Dijsktra shortest path: -1");
+        printf("Dijsktra shortest path: -1 ");
     } else {
-        printf("Dijsktra shortest path: %d", dist);
+        printf("Dijsktra shortest path: %d ", dist);
     }  
 }
 
@@ -254,9 +254,9 @@ void TSP_cmd(pnode *head) {
     }
     permute(int_cities, 0, cities_len-1, head);
     if (TSP_ANS == Max_Value) {
-        printf("TSP shortest path: -1");
+        printf("TSP shortest path: -1 ");
     } else {
-        printf("TSP shortest path: %d", TSP_ANS);
+        printf("TSP shortest path: %d ", TSP_ANS);
     }
 }
 
