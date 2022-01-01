@@ -254,9 +254,9 @@ void TSP_cmd(pnode *head) {
     }
     permute(int_cities, 0, cities_len-1, head);
     if (TSP_ANS == Max_Value) {
-        printf("TSP shortest path: -1\n");
+        printf("TSP shortest path: -1 ");
     } else {
-        printf("TSP shortest path: %d\n", TSP_ANS);
+        printf("TSP shortest path: %d ", TSP_ANS);
     }
 }
 

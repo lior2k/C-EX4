@@ -21,6 +21,7 @@ int main() {
     pnode temp_p = NULL;
     pnode *head = &temp_p;
     char x = 0;
+    int flag = 0;
     while (x != backslashn) {
         x = getc(stdin);
         if (x == 'A') {
@@ -36,12 +37,27 @@ int main() {
             delete_node_cmd(head);
 
         } else if (x == 'S') {
-
-            shortsPath_cmd(head);
+            if (flag == 0) {
+                shortsPath_cmd(head);
+                flag = 1;
+            } else {
+                flag = 1;
+                printf("\n");
+                shortsPath_cmd(head);
+            }
+            
 
         } else if (x == 'T') {
             
-            TSP_cmd(head);
+            if (flag == 0) {
+                TSP_cmd(head);
+                flag = 1;
+            } else {
+                flag = 1;
+                printf("\n");
+                TSP_cmd(head);
+            }
+            
 
         } else if (x == 'P') {
 
