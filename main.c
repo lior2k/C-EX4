@@ -2,7 +2,7 @@
 #include "graph.h"
 #include "node.h"
 #include "algo.h"
-
+#include <stdlib.h>
 #define backslashn 10
 
 

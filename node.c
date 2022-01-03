@@ -113,6 +113,7 @@ void insert_new_node_cmd(pnode *head) {
         new_node = (pnode) malloc (sizeof(node));
         new_node -> id = id;
         new_node -> next = NULL;
+        new_node -> edges = NULL;
         last_node -> next = new_node;
     } else {
         free_node_edges(temp_node);
@@ -152,6 +153,7 @@ void insert_node_cmd(pnode *head) {
         *head = n1;
         n1 -> id = id;
         n1 -> next = NULL;
+        n1 -> edges = NULL;
         while (scanf("%d", &endpoint)) {
             scanf("%d", &weight);
             new_edge = (pedge) malloc(sizeof(edge));
@@ -172,6 +174,7 @@ void insert_node_cmd(pnode *head) {
         new_node = (pnode) malloc (sizeof(node));
         new_node -> id = id;
         new_node -> next = NULL;
+        new_node -> edges =NULL;
         pnode last_node = *head;
         while (last_node -> next != NULL) {
             last_node = last_node -> next;
